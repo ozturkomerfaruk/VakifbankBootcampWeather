@@ -8,10 +8,10 @@
 import Foundation
 
 class Client {
+    
     enum EndPoints {
         //base api
         static let base = "http://api.weatherstack.com/current?access_key=d3bea008aedcbeb905a57d40e1a9283a"
-        
         //MARK: Endpoints
         case city(String)
         

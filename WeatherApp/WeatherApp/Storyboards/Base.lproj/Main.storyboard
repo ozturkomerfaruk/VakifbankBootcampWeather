@@ -1,23 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0U9-04-eWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0U9-04-eWS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--FavoritesVC-->
         <scene sceneID="sKv-t1-tTP">
             <objects>
-                <viewController id="dvn-PE-UiF" sceneMemberID="viewController">
+                <viewController id="dvn-PE-UiF" customClass="FavoritesVC" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9M-Be-5Bs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4y-ns-eai">
+                                <rect key="frame" x="170" y="174" width="55" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Oku"/>
+                                <connections>
+                                    <action selector="deneme:" destination="dvn-PE-UiF" eventType="touchUpInside" id="L4s-12-fJi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9d-NJ-2Zb">
+                                <rect key="frame" x="182" y="233" width="51" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="yaz"/>
+                                <connections>
+                                    <action selector="yaz:" destination="dvn-PE-UiF" eventType="touchUpInside" id="Uib-iS-61M"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9lR-da-tsw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X4y-ns-eai" firstAttribute="top" secondItem="9lR-da-tsw" secondAttribute="top" constant="82" id="0QX-4m-sZH"/>
+                            <constraint firstItem="X4y-ns-eai" firstAttribute="leading" secondItem="9lR-da-tsw" secondAttribute="leading" constant="170" id="CCd-NG-vSH"/>
+                            <constraint firstItem="u9d-NJ-2Zb" firstAttribute="leading" secondItem="9lR-da-tsw" secondAttribute="leading" constant="182" id="Wbg-85-I6u"/>
+                            <constraint firstItem="u9d-NJ-2Zb" firstAttribute="top" secondItem="X4y-ns-eai" secondAttribute="bottom" constant="24" id="nzh-rH-Oxl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rdn-GY-cVy"/>
                 </viewController>
@@ -123,7 +148,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="cIN-4F-MBz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="q0p-ej-qub">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -142,7 +167,7 @@
                     <tabBarItem key="tabBarItem" title="Item 2" id="9C9-KP-iCu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZZY-gH-PqF">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

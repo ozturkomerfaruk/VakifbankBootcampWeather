@@ -8,11 +8,12 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    
     @IBOutlet private var datePickerView: UIDatePicker!
     @IBOutlet private weak var cityTextField: UITextField!
     @IBOutlet private weak var dateTextField: UITextField!
     @IBOutlet private var toolbar: UIToolbar!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
